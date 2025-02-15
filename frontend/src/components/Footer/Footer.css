@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Electrolize&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap');
+
+li ,p{
+    font-family: "Lato", serif;
+}
+.footer{
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    padding: 19px 8vw;
+    padding-top: 80px;
+    margin-top: 80px;
+}
+.footer-content{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1.9fr 1fr 1fr;
+    gap: 80px;
+}
+.footer-content-left , .footer-content-center ,.footer-content-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+.footer-content-left li, .footer-content-center li,.footer-content-right li{
+    list-style: none;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.footer-social-icon img{
+    padding-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    .footer-content{
+        grid-template-columns: repeat(auto-fill,minmax(240px,1.2fr));
+        gap: 50px;
+    }
+}

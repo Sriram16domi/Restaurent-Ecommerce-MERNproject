@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Electrolize&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap');
+
+.food-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+    animation: fadeIn 1s;
+    transition: .3s;
+}
+.food-item .food-item-img-container .food-item-image{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    z-index: 1;
+}
+.food-item-img-container{
+    position: relative;
+    
+}
+.food-item-img-container .add{
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.food-item-counter{
+    width: 30px;
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+.food-item-counter img{
+    width: 30px;
+}
+.food-item-counter p{
+    background-color:aliceblue;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 50%;
+}
+.food-item-info{
+    padding: 20px;
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.food-item-name-rating p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Lato", serif;
+    color: black;
+}
+.food-item-desc{
+    font-size: 15px;
+    color: gray;
+}
+.food-item-price{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #3ae63a;
+}

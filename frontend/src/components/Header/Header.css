@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Electrolize&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap');
+
+.header{
+    height: 30vw;
+    background: url('header_img.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    margin-top: 10px;
+    color: aliceblue;
+    position: relative;
+}
+.header .header-contents{
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 50%;
+    animation: fadeIn .3s ease; 
+}
+.header .header-contents h2{
+    font-size: clamp(3rem,4vh,4rem);
+    font-weight: 800;
+    font-family:"Lato", serif ;
+}
+.header .header-contents p{
+    font-family:"Lato", serif ;
+    font-size: 15px;
+}
+.header .header-contents .btn{
+    padding: 5px 10px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        height: 50vw;
+    }
+    .header .header-contents{
+        gap: 15px;
+        max-width: 90%;
+        bottom: 15%;
+    }
+    .header .header-contents h2{
+        font-size: 25px;
+    }
+    .header .header-contents p{
+        font-family:"Lato", serif ;
+        font-size: 10px;
+        color: #ded6d6e1;
+    }
+}

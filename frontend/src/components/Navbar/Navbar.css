@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Electrolize&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap');
+
+.Navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar .logo{
+    width: 145px;
+}
+.Navbar .navbar-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar .navbar-menu a{
+    list-style: none;
+    padding: 4px 15px;
+    font-size: clamp(1rem,2vh,2.8rem);
+    font-weight: 500;
+    font-family:  "Lato", serif;
+    cursor: pointer;
+}
+.Navbar .navbar-right{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.Navbar button{
+    font-size: 15px;
+    padding: 7px 20px;
+    border: 1px solid black;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: .5s;
+}
+.Navbar button:hover{
+    background-color: #f26937;
+    color: whitesmoke;
+    border: none;
+}
+.Navbar .active{
+    border-bottom: 2px solid #f26937;
+}
+.Navbar .navbar-right{
+    position: relative;
+}
+.Navbar .navbar-right .dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: orangered;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+}
+.navbar-profile{
+    position: relative;
+
+}
+.nav-profile-dropdown{
+    position:absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav-profile-dropdown img{
+    width: 20px;
+}
+.nav-profile-dropdown li:hover{
+    color: tomato;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+    
+}
+@media screen and (max-width: 880px) {
+
+    .Navbar .navbar-menu{
+        display:none;
+        
+    }
+    .Navbar .navbar-right{
+        gap:10px;
+    }
+    
+}
+
+

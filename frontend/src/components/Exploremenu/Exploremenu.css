@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Electrolize&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap');
+
+.explore-menu{
+    margin-top: 40px;
+}
+.explore-menu h1{
+    padding: 10px;
+    font-weight: 800;
+    font-family: "Lato", serif;
+}
+.explore-menu .explore-menu-text{
+   padding:10px;
+   font-size: 18px;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list .explore-menu-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+.explore-menu-list .explore-menu-list-item img{
+    width: 6.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius:50%;
+}
+.explore-menu-list-item p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #6b6767;
+    font-weight: 800;
+    font-family: "Lato", serif;
+}
+.explore-menu hr{
+    height: 1px;
+    margin-top: 5px;
+    background-color: #6b6767;
+    border: none;
+    border-radius: 50px;
+}
+.explore-menu-list-item .active{
+    border: 3px solid orangered;
+    padding: 2px;
+}
